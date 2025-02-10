@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eswar Malle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="img/favicon.ico" rel="icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iQpgvm0AEvIoZgKPq",
+      });
+   })();
+</script>
+<script src="script1.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Eswar Malle</h1>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#certificates">Certificates</a>
+                    <ul class="dropdown">
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#digital-badges">Digital Badges</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            
+
+            <header id="home" class="hero">
+                <div class="hero-content">
+                  <span class="heroz">  <h1>Hi, I’m Eswar Malle</h1></span>  
+                    <h2>A Passionate Developer & Designer</h2>
+                    <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </nav>
+</body>
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+</html>
+
+  
+    <!-- About Section -->
+    <section id="about" >
+    <section class="about-section">
+        <div class="about-content">
+            <!-- Left Side: Text Content -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm a passionate developer with experience in building web applications 
+                    and crafting beautiful user interfaces. I specialize in front-end development and 
+                    have a knack for creating responsive and user-friendly designs. Let's build something amazing together!
+                </p>
+                <p>
+                    When I'm not coding, I enjoy exploring new technologies, learning new skills, and sharing knowledge with others.
+                </p>
+                
+            <div class="about-details">
+                <div class="about-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Front-end Development</span>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-code"></i>
+                    <span>Dynamic Applications</span>
+                </div>
+            </div>
+
+            </div>
+            
+
+            <!-- Right Side: Image and Icons -->
+            <div class="about-image">
+                <img src="background.jpg" alt="About Me">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/eswar_1006/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/EswarMalle?t=jOUJEZrZeSfeFKpy4bJCPw&s=08 "><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/eswararao-malle/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EswararaoMalle"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    	<!--education start -->
+		<section id="education" class="education">
+            <section class="education-section">
+                <h2>Education</h2>
+                <div class="education-timeline">
+                    <!-- Education Item 1 -->
+                    <div class="education-item">
+                        <div class="education-content">
+                            <h3>Bachelor of Technology in Computer Science Engineering</h3>
+                            <p class="institute">Godavari Global University</p>
+                            <p class="duration">2022 - 2026</p>
+                            <p class="description">Currently pursuing a Bachelor’s degree in Computer Science and Engineering. Passionate about solving real-world problems through technology and continuously learning cutting-edge advancements in the field.
+
+                            </p>
+                        </div>
+                        <div class="education-marker"></div>
+                    </div>
+                    
+                    <!-- Education Item 2 -->
+                    <div class="education-item">
+                        <div class="education-content">
+                            <h3>Intermediate in MPC Stream</h3>
+                            <p class="institute">Sri Nidhi Junior College</p>
+                            <p class="duration">2020 - 2022</p>
+                            <p class="description">Achieved a good grade with a strong emphasis on Mathematics and communication skills.</p>
+                        </div>
+                        <div class="education-marker"></div>
+                    </div>
+                </div>
+            </section>
+        	
+	<!--/.education-->
+		
+    
+    <!--skills -->
+    <section id="skills" >
+
+            <section class="skills-section">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <span class="skill-name">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">mysql</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Angular</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Figma</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Java</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">UI / UX</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Wordpress</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Artificial Intelligence</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Business Analyst</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       <!-- Experience -->
+            <section id="experience" >
+            <section class="experience-section">
+                <h2>My Experience</h2>
+                <div class="experience-tree">
+                    <!-- Left Side Entry -->
+                    <div class="tree-item left">
+                        <div class="content">
+                            <h3>Java Full Stack | UI/UX Trainee</h3>
+                            <h4>Techwing  · Apprenticeship</h4>
+                            <p>Aug 2024 - Present </p>
+                            <p>On-site </p>
+                            <p>
+                                Designed and implemented responsive web pages using HTML, CSS, and JavaScript. Collaborated with the design team to improve UI/UX.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Right Side Entry -->
+                    <div class="tree-item right">
+                        <div class="content">
+                            <h3>Business Analyst Intern</h3>
+                            <h4>SmartInternz . Internship </h4>
+                            <p>Jul 2024 - Aug 2024 · 2 mos</p>
+                            <p>Remote</p>
+                            <p>
+                                At SmartBridge, I gained hands-on experience in data analysis, requirement gathering, and delivering strategic insights. I worked with cross-functional teams to translate business challenges into data-driven solutions, enhancing process efficiency and supporting decision-making. This role strengthened my ability to align data with business needs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Left Side Entry -->
+                    <div class="tree-item left">
+                        <div class="content">
+                            <h3>Artificial Intelligence Intern</h3>
+                            <h4>AIMER Society - Artificial Intelligence Medical and Engineering Researchers Society · Internship</h4>
+                            <p>May 2024 - Jun 2024 · 2 mos</p>
+                            <p>Remote</p>
+                            <p>
+                                During this internship, I:
+                                Developed Object Detection Models
+                                Engaged in Image Classification
+                                Created a Telegram Bot
+                                Explored Power BI
+                                This experience has significantly broadened my skills in AI and machine learning, and I am excited to continue applying and expanding my knowledge in future projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+      <!-- projects -->  
+      <section id="projects" >
+        <section class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3> Fracture Detection in X-rays!</h3>
+                    <p>I am thrilled to announce the completion of an Fracture Detection in X-rays AI model, Detecting fractures in bone X-rays developed with the support of the Yolov8 computer vision model. My journey into the world of AI began during my internship at Aimers, where I gained invaluable insights into this cutting-edge technology.
+                        Impact: Accurate and quick detection can improve treatment planning and patient recovery.</p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/posts/eswararao-malle_ai-computervision-innovation-activity-7210588128808419328-cGpc?utm_source=share&utm_medium=member_desktop" class="btn" target="_blank">Live Demo</a>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="blog1.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project, highlighting features or technologies used.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn" target="_blank">Live Demo</a>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="blog1.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project, highlighting features or technologies used.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn" target="_blank">Live Demo</a>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Certificates-->
+
+    <section id="certificates" class="certificates-section">
+        <h2>Certificates</h2>
+        <div class="certificate">
+            <img src="html.png" alt="Certificate 1">
+            <h3>HTML & CSS Workshop</h3>
+            <p>Issued by: IndStack</p>
+        </div>
+        <div class="certificate">
+            <img src="ui.png" alt="Certificate 2">
+            <h3>GUVI's Skill-A-Thon</h3>
+            <p>Issued by: GUVI</p>
+        </div>
+        <div class="certificate">
+            <img src="ai.jpg" alt="Certificate 3">
+            <h3>Short-Term Internship on Artificial Intelligence</h3>
+            <p>Issued by: AIMER Society</p>
+        </div>
+        <div class="certificate">
+            <img src="ba.png" alt="Certificate 4">
+            <h3>Internship on Business Analytics</h3>
+            <p>Issued by: SmartBridge</p>
+        </div>
+        <div class="certificate">
+            <img src="pm.png" alt="Certificate 5">
+            <h3>Postman API Fundamentals Student Expert</h3>
+            <p>Issued by: Canvas Credentials (Badgr)</p>
+        </div>
+        <div class="certificate">
+            <img src="rh.png" alt="Certificate 6">
+            <h3>Linux Fundamentals</h3>
+            <p>Issued by: Red Hat</p>
+        </div>
+        <div class="certificate">
+            <img src="cyber.png" alt="Certificate 7">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Issued by:  Cisco</p>
+        </div>
+        <div class="certificate">
+            <img src="ibm.png" alt="Certificate 8">
+            <h3>IBM watsonx.ai Technical Essentials</h3>
+            <p>Issued by: IBM</p>
+        </div>
+        <div class="certificate">
+            <img src="python.png" alt="Certificate 9">
+            <h3>Python for Data Science</h3>
+            <p>Issued by:  IBM</p>
+        </div>
+    </section>
+<!--certifications-->
+    <!-- <section id="certifications" class="certificates-section">
+        <h2>Certifications</h2>
+        <div class="certificate">
+            <img src="inprogress.jpg" alt="inprogress 1">
+            <h3>Certification Title 1</h3>
+            <p>Issued by: Organization Name</p>
+        </div>
+        <div class="certificate">
+            <img src="inprogress.jpg" alt="inprogress 2">
+            <h3>Certification Title 2</h3>
+            <p>Issued by: Organization Name</p>
+        </div>
+    </section> -->
+<!--digital badges-->
+    <section id="digital-badges" class="certificates-section">
+        <h2>Digital Badges</h2>
+        <div class="certificate">
+            <img src="Postman - Postman API Fundamentals Student Expert - 2024-11-10 (1).png" alt="Digital Badge 1">
+            <h3>Postman API Fundamentals Student Expert</h3>
+            <p>Issued by: Canvas Credentials (Badgr)</p>
+        </div>
+        <div class="certificate">
+            <img src="ibm-watsonx-ai-technical-essentials.png" alt="Digital Badge 2">
+            <h3>IBM watsonx.ai Technical Essentials</h3>
+            <p>Issued by:  IBM</p>
+        </div>
+        <div class="certificate">
+            <img src="introduction-to-cybersecurity.png" alt="Digital Badge 3">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Issued by: Cisco</p>
+        </div>
+        <div class="certificate">
+            <img src="python-for-data-science.png" alt="Digital Badge 4">
+            <h3>Python for Data Science</h3>
+            <p>Issued by: IBM</p>
+        </div>
+        <div class="certificate">
+            <img src="qlik.png" alt="Digital Badge 5">
+            <h3>Business Analytics </h3>
+            <p>Issued by: SmartBridge</p>
+        </div>
+        <div class="certificate">
+            <img src="100Kmemberbadge.png" alt="Digital Badge 6">
+            <h3>Linux Fundamentals</h3>
+            <p>Issued by: Red Hat</p>
+        </div>
+    </section>
+
+      <!-- Blog Section --> 
+      <section id="blog" >   
+      <section class="blog-section">
+        <h2>My Blog</h2>
+        <div class="blog-container">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="blog1.png" alt="Blog 1">
+                <div class="blog-content">
+                    <h3>Web design prototype! </h3>
+                    <p>
+                        I’ve been working on a new project using Figma, focusing on creating an engaging and intuitive user experience for E-Learning platform.
+
+Check out the video to see the prototype in action! Feedback is always welcome – I’m constantly looking to improve my designs and learn from the community.
+
+                    </p>
+                    <a href="https://www.linkedin.com/posts/eswararao-malle_uxdesign-webdesign-figma-activity-7248635380873183232-LBPU?utm_source=share&utm_medium=member_desktop" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="blog2.png" alt="Blog 2">
+                <div class="blog-content">
+                    <h3>Introducing Eswar's ChatBot Pro! </h3>
+                    <p>
+                        I am thrilled to share a project I've been working on: Eswar's ChatBot Pro, a versatile AI assistant powered by advanced conversational AI technology. 
+                    </p>
+                    <a href="https://www.linkedin.com/posts/eswararao-malle_aimers-aimersociety-apsche-activity-7210730567401701376-WV7N?utm_source=share&utm_medium=member_desktop" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="blog3.png" alt="Blog 3">
+                <div class="blog-content">
+                    <h3>Vehicles detection AI model!</h3>
+                    <p>
+                        I am thrilled to announce the completion of an vehicles detection AI model, developed with the support of the Yolo v8 computer vision model. My journey into the world of AI began during my internship at Aimers, where I gained invaluable insights into this cutting-edge technology.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/eswararao-malle_ai-computervision-innovation-activity-7210571267555368960-vgXp?utm_source=share&utm_medium=member_desktop" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+       
+
+    <section class="get-in-touch">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feel free to reach out. I'd love to hear from you!</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: <a href="mailto:your-email@example.com">eswarmalle1006@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone: <a href="tel:+1234567890">+1234567890</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location:AP</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/eswar_1006/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/EswarMalle?t=jOUJEZrZeSfeFKpy4bJCPw&s=08 "><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/eswararao-malle/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/EswararaoMalle"><i class="fab fa-github"></i></a>
+            </div>
+            <br>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="sendMail()">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+          
+            <p>&copy; 2024 Eswar Malle. All rights reserved.</p>
+           
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const hero = document.getElementById('home');
+            const heroContent = hero.querySelector('.hero-content');
+            const heroOffset = hero.offsetTop + hero.offsetHeight;
+
+            if (window.scrollY > heroOffset) {
+                hero.classList.add('scrolled'); // Add class when scrolled past hero section
+            } else {
+                hero.classList.remove('scrolled'); // Remove class when back at top
+            }
+        });
+    </script>
+    
+</body>
+</html>
