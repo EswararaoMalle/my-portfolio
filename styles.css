@@ -1205,6 +1205,62 @@ body {
     }
 }
 
+
+/* Center the form on the page */
+#emailForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style input fields and textarea */
+#emailForm input,
+#emailForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Make textarea bigger */
+#emailForm textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Style the button */
+#emailForm button {
+    background: #ff7f00;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for button */
+#emailForm button:hover {
+    background: orangered;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    #emailForm {
+        width: 100%;
+    }
+}
+
+
 @keyframes slideInUp {
     from {
         transform: translateY(20px);

@@ -1,10 +1,12 @@
-function sendMail(){
-    let parms ={
-        name:document.getElementById("name").value,
-        email:document.getElementById("email").value,
-        subject:document.getElementById("subject").value,
+function SendMail(){
+    var parms ={
+        from_name:document.getElementById("fullname").value,
+        email_id:document.getElementById("email_id").value,
+       
         message:document.getElementById("message").value,
 
     }
-    emailjs.send("service_wuadg1j","template_t6394ov",parms).then(alert("Email sent!"))
+    emailjs.send("service_wuadg1j","template_7tlr8jx",parms).then(function(res){
+        alert("Success! " + res.status);
+    })
 }

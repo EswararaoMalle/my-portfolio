@@ -7,17 +7,39 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="img/favicon.ico" rel="icon">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "iQpgvm0AEvIoZgKPq",
+              <!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+      emailjs.init("iQpgvm0AEvIoZgKPq");  // Replace with your actual public key
+    })();
+  
+    function SendMail() {
+      var parms = {
+          from_name: document.getElementById("fullname").value,
+          email_id: document.getElementById("email_id").value,
+          message: document.getElementById("message").value,
+      };
+  
+      // Validation: Ensure fields are filled
+      if (!parms.from_name || !parms.email_id || !parms.message) {
+          alert("Please fill in all fields!");
+          return;
+      }
+  
+      emailjs.send("service_wuadg1j", "template_7tlr8jx", parms)
+      .then(function(res) {
+          alert("Email sent successfully! Status: " + res.status);
+          console.log("Email Sent Response:", res);
+          document.getElementById("emailForm").reset(); // Reset form after successful send
+      })
+      .catch(function(err) {
+          alert("Failed to send email. Check the console for errors.");
+          console.error("EmailJS Error:", err);
       });
-   })();
-</script>
-<script src="script1.js"></script>
+    }
+  </script>
+
 </head>
 <body>
     <nav class="navbar">
@@ -294,13 +316,18 @@
             </div>
             <!-- Project 2 -->
             <div class="project-card">
-                <img src="blog1.png" alt="Project 2">
+                <video width="400" height="200" autoplay muted loop>
+                    <source src="safety nets.mp4" type="video/mp4">
+                </video>
                 <div class="project-info">
-                    <h3>Project Title 2</h3>
-                    <p>A brief description of the project, highlighting features or technologies used.</p>
+                    <h3> Safety Nets Website Project</h3>
+                    <h4>Using Angular & Bootstrap</h4>
+                    <p>I’m excited to share my Safety Nets Website project, which I created as part of my passion for combining technology with practical safety solutions. Since my relative works in the same field, I saw an opportunity to build something that could be useful for both of us and for anyone in the safety and construction industries.
+                        💻 Built with Angular & Bootstrap
+                        I developed this website using Angular for a smooth and fast experience, making it easy for users to navigate and find what they need. Bootstrap was used to ensure the design is clean and looks great on all devices, from phones to computers.</p>
                     <div class="project-links">
-                        <a href="#" class="btn" target="_blank">Live Demo</a>
-                        <a href="#" class="btn" target="_blank">GitHub</a>
+                        <a href="https://safetynets1.netlify.app/ " class="btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/EswararaoMalle/angular-bootstrap-project" class="btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -490,14 +517,14 @@ Check out the video to see the prototype in action! Feedback is always welcome �
                 <a href="https://www.linkedin.com/in/eswararao-malle/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/EswararaoMalle"><i class="fab fa-github"></i></a>
             </div>
-            <br>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="subject" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" onclick="sendMail()">Send Message</button>
-            </form>
+
+<!-- Form -->
+<form id="emailForm">
+    <input type="text" id="fullname" placeholder="Your Name" required />
+    <input type="email" id="email_id" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="button" onclick="SendMail()">Send Message</button>
+</form>
         </div>
     </section>
     
